@@ -27,6 +27,12 @@ cover.json
 report.xml
 .env.sh
 
+tst/test.log.old
+tst/test.log
+tst/test.log.1
+tst/test.log.2
+tst/tst
+
 # Architecture specific extensions/prefixes
 *.[568vq]
 [568vq].out
