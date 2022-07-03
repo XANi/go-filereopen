@@ -75,4 +75,6 @@ func TestReopen(t *testing.T) {
 	if fail {
 		t.FailNow()
 	}
+	// just to let the background goroutine catch up close for coverage
+	time.Sleep(time.Millisecond * 200)
 }

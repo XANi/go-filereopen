@@ -11,7 +11,7 @@ Currently it uses simple polling with settable interval.
 Tested on Linux only
 
 Example:
-```
+```go 
 package main
 
 import (
@@ -39,6 +39,7 @@ func main() {
 Reopen can also be triggered by `f.Reopen()`.
 
 Underlying filedescriptor will only be swapped if opening a new one was successful. 
+The old filedescriptor will be synced immediately after the swap and closed few seconds later 
 
 Reopen is retried indefinitely, errors could be retrieved by using `SetErrorFunction` to set the error handler
 
